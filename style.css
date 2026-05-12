@@ -1,0 +1,19 @@
+.BarraSuperior {
+height:60px;      
+width: 100%;
+background-color: beige;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+h3 { 
+    color: rgb(150, 0, 0);
+    padding-top: 20px;
+}
+}
+
+#Entrada {
+display: flex;
+
+
+}
