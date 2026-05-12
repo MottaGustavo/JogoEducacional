@@ -33,13 +33,14 @@ padding-bottom:0px;
 
 #CapivaraHome {
     width: auto;
-    height: 30vw;
+    height: 22vw;
 }
 
 h2 {
     color: #884600;
     width: 90%;
     font-size: 6vh;
+    margin-bottom:15px;
 }
 
 #BotaoInicio {
@@ -49,6 +50,7 @@ h2 {
     background: #884600;
     border: snow solid 4px;
     border-radius: 20px;
+    text-decoration: none;
 }
 #BotaoInicio:hover {
     color: #884600;
@@ -73,6 +75,39 @@ align-items: center;
 
 h2 {
     font-size: 4vh;
+    margin-bottom:30px;
 }
 
+}
+
+.IconeSom {
+    width: 40px;
+    height: 40px;
+}
+
+.BotaoSom {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF6B35;
+  border: 5px solid #FF8C5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.BotaoSom:hover {
+  transform: scale(1.15);
+}
+.BotaoSom:active {
+  transform: scale(0.90);
+  background-color: #884600;
+  border: black solid 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
