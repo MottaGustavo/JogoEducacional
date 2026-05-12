@@ -1,19 +1,43 @@
+body {
+    background-color: #fffd9aba;
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+}
+
 .BarraSuperior {
-height:60px;      
+    padding-top:0px;
+height:10vh;      
 width: 100%;
-background-color: beige;
+background-color: #884600;
+line-height:10vh;
 text-align: center;
 align-items: center;
 justify-content: center;
 
 h3 { 
-    color: rgb(150, 0, 0);
-    padding-top: 20px;
+    margin: 0px;
+    color: snow ;
+    font-size: 3vh;
 }
 }
 
 #Entrada {
 display: flex;
+flex-direction: column;
+margin-top: 30px;
+align-items: center;
+justify-content: center;
+padding: 30px;
 
+}
 
+#CapivaraHome {
+    width: 60%;
+    height: auto;
+}
+
+h2 {
+    color: #884600;
+    width: 90%;
+    font-size: 7vw;
 }
