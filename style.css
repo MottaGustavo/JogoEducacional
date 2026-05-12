@@ -6,10 +6,10 @@ body {
 
 .BarraSuperior {
     padding-top:0px;
-height:10vh;      
+height:8vh;      
 width: 100%;
 background-color: #884600;
-line-height:10vh;
+line-height:8vh;
 text-align: center;
 align-items: center;
 justify-content: center;
@@ -17,27 +17,62 @@ justify-content: center;
 h3 { 
     margin: 0px;
     color: snow ;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 }
 
 #Entrada {
 display: flex;
 flex-direction: column;
-margin-top: 30px;
 align-items: center;
 justify-content: center;
 padding: 30px;
+padding-bottom:0px;
 
 }
 
 #CapivaraHome {
-    width: 60%;
-    height: auto;
+    width: auto;
+    height: 30vw;
 }
 
 h2 {
     color: #884600;
     width: 90%;
-    font-size: 7vw;
+    font-size: 6vh;
+}
+
+#BotaoInicio {
+    padding: 14px;
+    font-size: 4vh;
+    color: snow;
+    background: #884600;
+    border: snow solid 4px;
+    border-radius: 20px;
+}
+#BotaoInicio:hover {
+    color: #884600;
+    background-color: snow;
+    border: #884600 solid 4px;
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media (max-width: 1100px) {
+#CapivaraHome {
+    height: 30vh;
+    width: auto;
+}
+#BotaoInicio {
+    font-size: 3vh;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
 }
