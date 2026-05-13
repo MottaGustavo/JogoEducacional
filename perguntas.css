@@ -1,0 +1,114 @@
+body {
+    background-color: #fffd9aba;
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+
+.BarraSuperior {
+    padding-top:0px;
+height:8vh;      
+width: 100%;
+background-color: #884600;
+line-height:8vh;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+h3 { 
+    margin: 0px;
+    color: snow ;
+    font-size: 4vh;
+}
+}
+
+.IconeSom {
+    width: 40px;
+    height: 40px;
+}
+
+.BotaoSom {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF6B35;
+  border: 5px solid #FF8C5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.BotaoSom:hover {
+  transform: scale(1.15);
+}
+.BotaoSom:active {
+  transform: scale(0.90);
+  background-color: #884600;
+  border: black solid 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 5vw;
+    margin-top: 30px;
+    color: #ff6b35;
+}
+
+.Letras {
+    font-size: 4vh;
+    color: #ff6b35;
+}
+
+.Opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom:0px;
+    gap: 10px;
+}
+
+.BotaoOpcao {
+    padding: 14px;
+    font-size: 4vh;
+    color: snow;
+    background: #884600;
+    border: snow solid 4px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+
+.BotaoOpcao img {
+    width: 18vw;
+    height: 18vw;
+}
+
+@media (max-width: 1100px) {
+
+    .Opcoes {
+        flex-direction: column;
+    }
+
+    .BotaoOpcao img {
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .BotaoOpcao {
+        padding: 10px;
+        font-size: 3vh;
+    }
+
+    .Letras {
+        font-size: 3vh;
+
+    }
+}
