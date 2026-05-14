@@ -6,20 +6,20 @@ body {
 }
 
 .BarraSuperior {
-    padding-top:0px;
-height:8vh;      
-width: 100%;
-background-color: #884600;
-line-height:8vh;
-text-align: center;
-align-items: center;
-justify-content: center;
-
-h3 { 
-    margin: 0px;
-    color: snow ;
-    font-size: 4vh;
+    padding-top: 0px;
+    height: 8vh;
+    width: 100%;
+    background-color: #884600;
+    line-height: 8vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
+
+.BarraSuperior h3 {
+    margin: 0px;
+    color: snow;
+    font-size: 4vh;
 }
 
 .IconeSom {
@@ -28,23 +28,25 @@ h3 {
 }
 
 .BotaoSom {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #FF6B35;
-  border: 5px solid #FF8C5A;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF6B35;
+    border: 5px solid #FF8C5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
 .BotaoSom:hover {
-  transform: scale(1.15);
+    transform: scale(1.15);
 }
+
 .BotaoSom:active {
-  transform: scale(0.90);
-  background-color: #884600;
-  border: black solid 5px;
+    transform: scale(0.90);
+    background-color: #884600;
+    border: black solid 5px;
 }
 
 footer {
@@ -70,7 +72,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    padding-bottom:0px;
+    padding-bottom: 0px;
     gap: 10px;
 }
 
@@ -101,7 +103,7 @@ h1 {
         width: 30vw;
         height: 30vw;
     }
-    
+
     .BotaoOpcao {
         padding: 10px;
         font-size: 3vh;
