@@ -7,6 +7,101 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    
+    <div class=""topo">
+        <h1>VIVA BRUSQUE!</h1>
+    </div>
+
+    <div class="personagem-principal">
+        <img src="" alt="">
+    </div>
+
+    <div class="login">
+        <h2>Qual é o seu nome?</h2>
+
+        <input 
+        type="text"
+        id="nome"
+        maxlength="12"
+        placeholder="Digite Aqui"
+        autofocus
+        >
+
+        <h2>Escolha seu amiguinho!</h2>
+
+        <div class="avatars">
+            <div class="avatar" onclick="selecionarAvatar(this, 'cachorro')">
+                <img src="" alt="Cachorro">
+            </div>
+
+            <div class="avatar" onclick="selecionarAvatar(this, 'gato')">
+                <img src="" alt="Gato">
+            </div>
+
+            <div class="avatar" onclick="selecionarAvatar(this, 'coelho')">
+                <img src="" alt="Coelho">
+            </div>
+
+            <div class="avatar" onclick="selecionarAvatar(this, 'girafa')">
+                <img src="" alt="Girafa">
+            </div>
+
+            <div class="avatar" onclick="selecionarAvatar(this, 'capivara')">
+                <img src="" alt="Capivara">
+            </div>
+
+            <div class="avatar" onclick="selecionarAvatar(this, 'marreco')">
+                <img src="" alt="Marreco">
+            </div>
+        </div>
+
+        <button onclick="entrar()">
+            JOGAR
+        </button>
+    </div>
+
+    <audio id="somClique" src="audios/clique.mp3"></audio>
+    <audio id="somEntrar" src="audios/entrar.mp3"></audio>
+
+    <script>
+        let avatarSelecionado = "";
+
+        const somClique = document.getElementById("somClique");
+        const somEntrar = document.getElementById("somEntrar");
+
+        function selecionarAvatar(elemento, avatar) {
+            somClique.play();
+
+            document.querySelectorAll('.avatar').forEach(a => {
+                a.classList.remove('selected')
+            });
+
+            elemento.classList.add('selected');
+
+            avatarSelecionado = avatar;
+        }
+
+        function entrar() {
+            const nome = document.getElementById('nome').value.trim();
+
+            if (nome === "") {
+                alert('Digite seu nome!');
+                return;
+            }
+
+            if (avatarSelecionado === "") {
+                alert('Escolha um avatar');
+                return;
+            }
+
+            somEntrar.play();
+
+            localStorage.setItem('nomeJogador',nome);
+            localStorage.setItem('avatarJogador, avatarSelecionado');
+
+            setTimeout(() => {
+                window.location.href = ' jogo.html'
+            } , 1200);
+        }
+    </script>
 </body>
 </html>
