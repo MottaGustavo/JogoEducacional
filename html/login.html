@@ -62,9 +62,6 @@
     
     </main>
 
-    <audio id="somClique" src="audios/clique.mp3"></audio>
-    <audio id="somEntrar" src="audios/entrar.mp3"></audio>
-
     <script>
         let avatarSelecionado = "";
 
@@ -72,7 +69,6 @@
         const somEntrar = document.getElementById("somEntrar");
 
         function selecionarAvatar(elemento, avatar) {
-            somClique.play();
 
             document.querySelectorAll('.avatar').forEach(a => {
                 a.classList.remove('selected')
