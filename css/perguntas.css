@@ -114,3 +114,14 @@ h1 {
 
     }
 }
+
+.BotaoOpcaoSemFT {
+    padding: 20px;
+    font-size: 4vh;
+    color: snow;
+    background: #884600;
+    border: snow solid 4px;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 10px;
+}
