@@ -6,95 +6,89 @@
 }
 
 body{
-    background:#f5f5f5;
+     background:#f5f5f5;
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     overflow-x:hidden;
 }
 
-.container{
-    width:100%;
+login.container{
+        width:100%;
     max-width:1200px;
+    margin:0 auto;
+    padding:30px 20px;
     text-align:center;
-    padding:20px;
+}
+.topo-login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-bottom:35px;
 }
 
-.topo h1{
+.topo-login h1{
     color:#d97706;
-    font-size:60px;
-    margin-bottom:10px;
-}
-
-.topo p{
-    color:#f59e0b;
-    font-size:32px;
+    font-size:58px;
     font-weight:bold;
-    margin-bottom:30px;
 }
 
-.personagem-principal img{
-    width:220px;
-    animation:flutuar 2s infinite ease-in-out;
-}
-
-@keyframes flutuar{
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
+.topo-login img{
+    width:130px;
 }
 
 .login-box{
     background:white;
-    max-width:750px;
+    max-width:950px;
     margin:0 auto;
-    padding:40px;
+    padding:35px;
     border-radius:35px;
     box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
 
 .login-box h2{
-    color:#d97706;
+    color:#111;
     margin-bottom:20px;
-    font-size:34px;
+    font-size:30px;
 }
 
 input{
-    width:100%;
-    padding:22px;
-    border:none;
-    background:#f3f4f6;
+    width:80%;
+    padding:20px;
+    border:2px solid #eee;
+    background:#fafafa;
     border-radius:20px;
-    font-size:28px;
+    font-size:26px;
     text-align:center;
     margin-bottom:35px;
     outline:none;
 }
 
+input:focus{
+    border-color:#f59e0b;
+    background:#fff7ed;
+}
 
 .avatars{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
-    gap:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
     margin-bottom:35px;
 }
 
 .avatar{
+    width:145px;
+    height:145px;
     background:#fff7ed;
     border:5px solid transparent;
     border-radius:25px;
     padding:15px;
     cursor:pointer;
     transition:0.2s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .avatar:hover{
@@ -108,15 +102,19 @@ input{
 }
 
 .avatar img{
-    width:100%;
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
 }
 
 button{
+    display:block;
+    margin:0 auto;
     border:none;
     background:#d97706;
     color:white;
-    font-size:38px;
-    padding:20px 55px;
+    font-size:36px;
+    padding:18px 70px;
     border-radius:25px;
     cursor:pointer;
     transition:0.2s;
@@ -134,12 +132,17 @@ button:active{
 
 @media(max-width:768px){
 
-    .topo h1{
-        font-size:40px;
+    .topo-login{
+        flex-direction:column;
+        gap:10px;
     }
 
-    .topo p{
-        font-size:24px;
+    .topo-login h1{
+        font-size:38px;
+    }
+
+    .topo-login img{
+        width:100px;
     }
 
     .login-box{
@@ -147,11 +150,17 @@ button:active{
     }
 
     .login-box h2{
-        font-size:26px;
+        font-size:24px;
     }
 
     input{
+        width:100%;
         font-size:22px;
+    }
+
+    .avatar{
+        width:120px;
+        height:120px;
     }
 
     button{
