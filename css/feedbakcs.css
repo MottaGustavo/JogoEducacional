@@ -129,3 +129,38 @@ footer {
 .ProximaPergunta:hover::after {
     margin-left: 6px;
 }
+
+.TentarNovamente {
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.TentarNovamente a {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #ff4d4d, #ffb347);
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.TentarNovamente a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 18px rgba(255, 94, 87, 0.4);
+}
+
+.TentarNovamente a:active {
+    transform: scale(0.95);
+}
+
+.TentarNovamente a::after {
+    content: " ↺";
+    margin-left: 6px;
+}
