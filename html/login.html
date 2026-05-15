@@ -96,34 +96,11 @@
                 return;
             }
 
-            somEntrar.play();
+            localStorage.setItem('nomeJogador', nome);
+            localStorage.setItem('avatarJogador', avatarSelecionado);
 
-            localStorage.setItem('nomeJogador',nome);
-            localStorage.setItem('avatarJogador, avatarSelecionado');
-
-            const perguntas = [
-                './perguntas/pergunta1.html',
-                './perguntas/pergunta2.html',
-                './perguntas/pergunta3.html',
-                './perguntas/pergunta4.html',
-                './perguntas/pergunta5.html',
-                './perguntas/pergunta6.html',
-                './perguntas/pergunta7.html',
-                './perguntas/pergunta8.html',
-                './perguntas/pergunta9.html',
-                './perguntas/pergunta10.html',
-                './perguntas/pergunta11.html',
-                './perguntas/pergunta12.html',
-                './perguntas/pergunta13.html',
-                './perguntas/pergunta14.html',
-                './perguntas/pergunta15.html',
-            ];
-
-            const perguntaAleatoria = perguntas[math.floor(math.random() * perguntas.length)];
-
-            
-            window.location.href = perguntaAleatoria;
-           
+  
+        window.location.href = 'perguntas/pergunta1.html';
         }
     </script>
 </body>
