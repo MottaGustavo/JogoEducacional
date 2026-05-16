@@ -60,13 +60,15 @@ footer {
 
 .TextFeedback {
     width: 90%;
-  
+    text-align: center;
+    margin: 0 auto;
 }
 
 .TituloFeedback {
   font-size: 2vw;
     margin-top: 15px;
     margin-bottom: 10px;
+    text-align: center;
 
 }
 
