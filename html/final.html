@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Final</title>
+    <title>Fim do Jogo</title>
     <link rel="stylesheet" href="../css/final.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="BarraSuperior">
+            <h3>VIVA BRUSQUE!</h3>
+        </div>
+    </header>
+
+    <main class="container-final">
+
+        <div class="card-final">
+            <h1>🎉 Parabéns!</h1>
+
+            <p class="mensagem">
+                Você terminou o jogo!
+            </p>
+
+            <p class="frase-final">
+                Aprendeu várias coisas sobre Brusque se divertindo! 🧡
+            </p>
+
+            <button onclick="jogarNovamente()">
+                Jogar novamente
+            </button>
+        </div>
+
+    </main>
+
+    <script>
+        function jogarNovamente() {
+            window.location.href = "Perguntas/pergunta1.html";
+        }
+    </script>
+
 </body>
+
 </html>
