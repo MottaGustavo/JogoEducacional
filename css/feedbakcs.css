@@ -39,7 +39,6 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .BotaoSom:hover {
@@ -71,6 +70,10 @@ footer {
 
 }
 
+.TxtBotao {
+    text-decoration: none;
+    color: white
+}
 
 
 .IconeFeedback img {
@@ -109,6 +112,7 @@ footer {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    
 }
 
 .ProximaPergunta:hover {
